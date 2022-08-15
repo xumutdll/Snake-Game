@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./snake.js" defer></script>
+  </head>
+
+  <body>
+    <h2 id="score" style="width: 20%; color: rgb(250, 250, 250)">Score: 0</h2>
+    <span id="idSnake"></span>
+    <div id="idPlayArea"></div>
+
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="button" value="Start" id="idStart" onclick="start()" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <input
+            type="button"
+            value="Reset"
+            id="idReset"
+            onclick="gameover()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1">
+          <input
+            type="button"
+            value="Borderless"
+            class="borderClass"
+            onclick="border_func(0)"
+          />
+        </td>
+        <td colspan="1">
+          <input
+            type="button"
+            value="Horizonal"
+            class="borderClass"
+            onclick="border_func(1)"
+          />
+        </td>
+        <td colspan="1">
+          <input
+            type="button"
+            value="Vertical"
+            class="borderClass"
+            onclick="border_func(2)"
+          />
+        </td>
+        <td colspan="1">
+          <input
+            type="button"
+            value="Full"
+            class="borderClass"
+            onclick="border_func(3)"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1">
+          <input
+            type="button"
+            value="Easy"
+            class="difficultyButtons"
+            onclick="difficulty(0)"
+            disabled
+          />
+        </td>
+        <td colspan="1">
+          <input
+            type="button"
+            value="Medium"
+            class="difficultyButtons"
+            onclick="difficulty(1)"
+          />
+        </td>
+        <td colspan="1">
+          <input type="button" value="Hard""" class="difficultyButtons"
+          onclick="difficulty(2)" />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="Ouroboros"
+            id="idOuroboros"
+            onclick="ouroborosSwitch()  "
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
